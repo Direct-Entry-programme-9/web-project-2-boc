@@ -6,9 +6,17 @@
     font-family: 'Lato', sans-serif;
 }
 
-.clear-fix{
+.clearfix{
     clear: both;
 }
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+
+}
+
 
 h1{
     font-size: 2rem;
@@ -42,3 +50,133 @@ h6{
 
 /* Layouts */
 
+#header{
+    
+}
+
+#app-row{
+    /* background-color: yellow; */
+    height: 80px;
+}
+
+#app-row>.container{
+    /* background-color: blueviolet ; */
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container{
+    width: 1170px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo{
+    height: 60px;
+    float: left;
+}
+
+#app-row>.container>.wrapper{
+    float: right;
+    /* width: 70%; */
+    height: 100%;
+    /* background-color: brown; */
+}
+
+#app-row > .container > .wrapper > .row:first-child{
+    background-color: white;
+}
+
+
+#nav-lang li{
+    float: right;
+}
+
+#nav-lang li a{
+    font-size: 0.8rem;
+    color: black;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+#nav-lang li a:hover{
+    color: #ff9d1e;
+    text-decoration: underline;
+}
+
+#app-row > .container > .wrapper > .row:last-child{
+    /* background-color: lightcoral; */
+    padding-top: 10px;
+}
+
+#main-nav{
+    float: left;
+    /* background-color: yellowgreen; */
+    padding-top: 15px;
+}
+
+#smi-wrapper{
+    float: right;
+    background-color: white;
+}
+
+#main-nav ul li{
+    float: right;
+    font-size: 14px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+#main-nav ul li:hover{
+    text-decoration: underline;
+}
+
+
+#smi-wrapper ul li{
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+#smi-wrapper ul li ion-icon{
+    padding: 8px;
+    color: white;
+}
+
+#smi-wrapper ul li:nth-last-child(1){
+    background-color: #3f4da1;
+}
+
+#smi-wrapper ul li:nth-last-child(2){
+    background-color: #57a0d7;
+}
+
+#smi-wrapper ul li:nth-last-child(3){
+    background-color: lightblue;
+}
+
+#smi-wrapper ul li:nth-last-child(4){
+    background-color: #d74527;
+}
+
+
+
+
+
+
+
+
+
+
+#nav-row{
+    background-color: green;
+}
+
+#misc-row{
+    background-color: blue;
+}
