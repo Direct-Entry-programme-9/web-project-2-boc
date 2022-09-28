@@ -516,10 +516,14 @@ main>.row:nth-of-type(2)>.container>.col:last-child ul li a div:first-child{
     margin-top: 20px;
     padding: 0 10px;    
     height: 388px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .slide{
+    scroll-snap-align: center;
     position: absolute;
     background-repeat: no-repeat;
     height: 388px;
@@ -577,3 +581,180 @@ main>.row:nth-of-type(2)>.container>.col:last-child ul li a div:first-child{
     padding-top: 6px;
     vertical-align: sub;
 }
+
+#slider-wrapper{
+    width: 100%;
+    position: relative;
+    animation-name: slider-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider-animation{
+    from{
+        left: 0%;
+    }
+    23%{
+        left: 0%;
+    }
+    33%{
+        left: -100%;
+    }
+    56%{
+        left: -100%
+    }
+    66%{
+        left: -200%;
+    }
+    90%{
+        left: -200%;
+    }
+    100%{
+        left: -300%;
+    }
+}
+
+main>.row:nth-of-type(3){
+    padding-top: 20px;
+}
+
+main>.row:nth-of-type(3)>.container>.col{
+    width: 25%;
+    height: 250px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /* to remove colors in the padding area, only color will be apply to the content box */
+    background-clip: content-box;
+
+    overflow: hidden;
+}
+
+
+main>.row:nth-of-type(3)>.container>.col:first-child{
+    /* background-color: green; */
+}
+
+main>.row:nth-of-type(3)>.container>.col:nth-child(2){
+    /* background-color: blue; */
+}
+
+main>.row:nth-of-type(3)>.container>.col:nth-child(3){
+    /* background-color: blue; */
+}
+
+main>.row:nth-of-type(3)>.container>.col:last-child{
+    /* background-color: pink; */ 
+}
+
+main>.row:nth-of-type(3)>.container>.col .wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+main>.row:nth-of-type(3)>.container>.col>.wrapper>.overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+main>.row:nth-of-type(3)>.container>.col>.wrapper>.overlay a{
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+main>.row:nth-of-type(3)>.container>.col:hover .overlay{
+    display: block;
+}
+
+main>.row:nth-of-type(3)>.container>.col img{
+    display: block;
+    width: 100%;
+}
+
+main>.row:nth-of-type(3)>.container>.col:hover img{
+    transform: scale(1.2);
+    transition: transform 500ms;
+}
+
+
+main>.row:nth-of-type(3)>.container>.col .topic{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    background-color: #525252;
+    color: white;
+    z-index: 1;
+}
+
+main>.row:nth-of-type(3)>.container>.col:hover .topic{
+    background-color: #ffde00;
+    color: black;
+}
+
+
+
+
+main>.row:nth-of-type(4){
+    padding-bottom: 20px;
+}
+
+main>.row:nth-of-type(4)>.container>.col{
+    height: 50px;
+}
+
+main>.row:nth-of-type(4)>.container>.col:first-child{
+    width:25%;
+    float: left;
+    text-align: right;
+    
+}
+
+main>.row:nth-of-type(4)>.container>.col:first-child>p:first-of-type{
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+main>.row:nth-of-type(4)>.container>.col:first-child>p:last-of-type{
+    font-size: 20px
+}   
+
+main>.row:nth-of-type(4)>.container>.col:first-child>p:last-of-type ion-icon{
+    color: #8a8a8a;
+    padding-right: 20px;
+}
+
+main>.row:nth-of-type(4)>.container>.col:nth-child(2){
+    width:50%;
+    float: left;
+    text-align: center;
+}
+
+main>.row:nth-of-type(4)>.container>.col:last-child{
+    width: 25%;
+    float: right;
+}
+
+main>.row:nth-of-type(4)>.container>.col:last-child p:first-of-type{
+    font-size: 1.1rem;
+    text-align: right;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+main>.row:nth-of-type(4)>.container>.col:last-child p:last-of-type{
+    font-size: 0.7rem;
+    color: #8a8a8a;
+    text-align: right;
+    padding-right: 10px;
+}
+
