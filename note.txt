@@ -1,0 +1,4 @@
+background-size: contain;
+
+-"contain" mean place the full image in given area without changing the acpect ratio of that
+- 

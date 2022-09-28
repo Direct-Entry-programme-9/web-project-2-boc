@@ -457,7 +457,7 @@ main>.row:nth-of-type(2)>.container>.col{
 
 main>.row:nth-of-type(2)>.container>.col:first-child{
     width: 75%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 main>.row:nth-of-type(2)>.container>.col:last-child{
@@ -502,11 +502,78 @@ main>.row:nth-of-type(2)>.container>.col:last-child ul li a{
 
 main>.row:nth-of-type(2)>.container>.col:last-child ul li a div{
     display: table-cell;
-   padding: 10px 10px 10px 20px;
-   vertical-align: middle;
-   line-height: 1.1rem;
+    padding: 10px 10px 10px 20px;
+    vertical-align: middle;
+    line-height: 1.1rem;
 }
 
 main>.row:nth-of-type(2)>.container>.col:last-child ul li a div:first-child{
     width: 90%;
+}
+
+#slider{
+    position: relative;
+    margin-top: 20px;
+    padding: 0 10px;    
+    height: 388px;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 388px;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+}
+
+#slide-1{
+    background-image: url('https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg');
+}
+
+#slide-2{
+    left: 100%;
+    background-image: url('https://boc.lk/image/data/Banner/Pita-pita_season-3-2022-E.jpg');
+}
+
+#slide-3{
+    left: 200%;
+    background-image: url('https://boc.lk/image/data/Banner/SDA-2022-09.jpeg');
+}
+
+#slide-4{
+    left: 300%;
+    background-image: url('https://boc.lk/image/data/Banner/Top1000_2022-En_1.jpg');
+}
+
+.slide .prev, .slide .next{
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    background-color: rgba(128, 130, 133, 0.9);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.slide .prev:hover, .slide .next:hover{
+    background-color: rgba(128, 130, 133, 0.801);
+}
+
+.slide .prev{
+    left: 10px;
+}
+
+.slide .next{
+    right: 10px;
+}
+
+.slide ion-icon{
+    color: white;
+    padding-top: 6px;
+    vertical-align: sub;
 }
