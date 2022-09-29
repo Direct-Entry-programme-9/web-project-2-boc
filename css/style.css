@@ -468,7 +468,7 @@ main>.row:nth-of-type(2)>.container>.col:last-child svg{
     height: 30px;
 }
 
-main>.row:nth-of-type(2)>.container>.col:last-child ul li{
+main>.row:nth-of-type(2)>.container>.col:last-child>ul>li{
     display: table;
     width: 100%;
     border-bottom: 1px solid #CCC;
@@ -484,7 +484,7 @@ main>.row:nth-of-type(2)>.container>.col:last-child ul{
     border-top: 1px solid #ececec;
 }
 
-main>.row:nth-of-type(2)>.container>.col:last-child ul li:hover{
+main>.row:nth-of-type(2)>.container>.col:last-child>ul>li:hover{
     background-color: #525252;
 }
 
@@ -494,7 +494,7 @@ main>.row:nth-of-type(2)>.container>.col:last-child ul li:hover svg{
     fill: #ff9d1e;;
 }
 
-main>.row:nth-of-type(2)>.container>.col:last-child ul li a{
+main>.row:nth-of-type(2)>.container>.col:last-child>ul>li a{
     display: table-row;
     text-decoration: none;
     color: black;
@@ -514,21 +514,19 @@ main>.row:nth-of-type(2)>.container>.col:last-child ul li a div:first-child{
 #slider{
     position: relative;
     margin-top: 20px;
-    padding: 0 10px;    
+    padding: 0 10px;
     height: 388px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
 }
 
- /* ******************************************************************************* */
 #slider-wrapper{                       
     height: 100%;
     overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; 
 }
 
 .slide{
+    position: relative;
     scroll-snap-align: center;
     position: absolute;
     background-repeat: no-repeat;
@@ -536,25 +534,6 @@ main>.row:nth-of-type(2)>.container>.col:last-child ul li a div:first-child{
     background-size: contain;
     background-position: center;
     width: 100%;
-}
-
-#slide-1{
-    background-image: url('https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg');
-}
-
-#slide-2{
-    left: 100%;
-    background-image: url('https://boc.lk/image/data/Banner/Pita-pita_season-3-2022-E.jpg');
-}
-
-#slide-3{
-    left: 200%;
-    background-image: url('https://boc.lk/image/data/Banner/SDA-2022-09.jpeg');
-}
-
-#slide-4{
-    left: 300%;
-    background-image: url('https://boc.lk/image/data/Banner/Top1000_2022-En_1.jpg');
 }
 
 .slide .prev, .slide .next{
@@ -584,15 +563,34 @@ main>.row:nth-of-type(2)>.container>.col:last-child ul li a div:first-child{
 
 .slide ion-icon{
     color: white;
-    padding-top: 6px;
+    /* padding-top: 6px; */
     vertical-align: sub;
+}
+
+#slide-1{
+    background-image: url('https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg');
+}
+
+#slide-2{
+    left: 100%;
+    background-image: url('https://boc.lk/image/data/Banner/Pita-pita_season-3-2022-E.jpg');
+}
+
+#slide-3{
+    left: 200%;
+    background-image: url('https://boc.lk/image/data/Banner/SDA-2022-09.jpeg');
+}
+
+#slide-4{
+    left: 300%;
+    background-image: url('https://boc.lk/image/data/Banner/Top1000_2022-En_1.jpg');
 }
 
 #slides-wrapper{
     width: 100%;
     position: relative;
     animation-name: slider-animation;
-    animation-duration: 5s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 
@@ -638,22 +636,6 @@ main>.row:nth-of-type(3)>.container>.col{
 }
 
 
-main>.row:nth-of-type(3)>.container>.col:first-child{
-    /* background-color: green; */
-}
-
-main>.row:nth-of-type(3)>.container>.col:nth-child(2){
-    /* background-color: blue; */
-}
-
-main>.row:nth-of-type(3)>.container>.col:nth-child(3){
-    /* background-color: blue; */
-}
-
-main>.row:nth-of-type(3)>.container>.col:last-child{
-    /* background-color: pink; */ 
-}
-
 main>.row:nth-of-type(3)>.container>.col .wrapper{
     overflow: hidden;
     position: relative;
@@ -669,13 +651,23 @@ main>.row:nth-of-type(3)>.container>.col>.wrapper>.overlay{
     background-color: rgba(0, 0, 0, .7);
 }
 
+main>.row:nth-of-type(3)>.container>.col>.wrapper>.overlay ul{
+    margin-top: 30px;
+}
+
 main>.row:nth-of-type(3)>.container>.col>.wrapper>.overlay a{
+    display:inline-block;
+    width: 272.5px;
     color: white;
     font-weight: bold;
     font-size: 0.9rem;
     text-decoration: none;
     line-height: 1.5rem;
     text-align: center;
+}
+
+main>.row:nth-of-type(3)>.container>.col>.wrapper>.overlay a:hover{
+    color: #ffde00;
 }
 
 main>.row:nth-of-type(3)>.container>.col:hover .overlay{
@@ -728,10 +720,12 @@ main>.row:nth-of-type(4)>.container>.col:first-child{
 main>.row:nth-of-type(4)>.container>.col:first-child>p:first-of-type{
     padding-bottom: 15px;
     font-size: 18px;
+    padding-right: 13px;
 }
 
 main>.row:nth-of-type(4)>.container>.col:first-child>p:last-of-type{
-    font-size: 20px
+    font-size: 20px;
+    padding-right: 13px;
 }   
 
 main>.row:nth-of-type(4)>.container>.col:first-child>p:last-of-type ion-icon{
@@ -784,7 +778,6 @@ main>.row:nth-of-type(4)>.container>.col:last-child p:last-of-type{
     padding-top: 35px;
     padding-left: 5px;
     padding-right: 5px;
-
 }
 
 #close-wrapper{
