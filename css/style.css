@@ -670,6 +670,10 @@ main>.row:nth-of-type(3)>.container>.col>.wrapper>.overlay a:hover{
     color: #ffde00;
 }
 
+main>.row:nth-of-type(3)>.container>.col>.overlay{
+    transition: display 5s;
+}
+
 main>.row:nth-of-type(3)>.container>.col:hover .overlay{
     display: block;
 }
@@ -725,7 +729,7 @@ main>.row:nth-of-type(4)>.container>.col:first-child>p:first-of-type{
 
 main>.row:nth-of-type(4)>.container>.col:first-child>p:last-of-type{
     font-size: 20px;
-    padding-right: 13px;
+    padding-right: 13px;    
 }   
 
 main>.row:nth-of-type(4)>.container>.col:first-child>p:last-of-type ion-icon{
