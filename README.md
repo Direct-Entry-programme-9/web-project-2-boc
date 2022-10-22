@@ -19,7 +19,7 @@ Clone version of BOC web page was  created  to practise my HTML5 CSS3 skills. Th
 1.0.0
 
 ### Licence
-Copyright &copy; 2022. All Right Reserved.<br>
+Copyright &copy; 2022 Visal Srimanga. All Right Reserved.<br>
 This project is licensed under the [MIT License](LICENSE.txt)
 
 ### Contact Details
