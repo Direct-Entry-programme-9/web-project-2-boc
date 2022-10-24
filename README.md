@@ -1,6 +1,6 @@
 # BOC App Clone
 
-Clone version of BOC web page was  created  to practise my HTML5 CSS3 skills. The original web page is designed with lotss of features and in that original web page, they have maintained fixed width design approach while there are some animationas are scrolling to increase the attractiveness of of the web page. The same features were inclided in the designed web page clone. For the official web page, Java script for designing their functions but, in the designed web clone all functions were created without using Javascript. (This web clone site is not reponsive for small windows like mobile displays)
+A Clone version of the BOC web page was created to practice my HTML5 CSS3 skills. The original web page is designed with lots of features and in that original web page, they have maintained a fixed-width design approach while there are some animations that are scrolling to increase the attractiveness of the web page. The same features were included in the designed web page clone. For the official web page, Java script for designing their functions but, in the designed web clone all functions were created without using Javascript. (This web clone site is not responsive for small windows like mobile displays)
 
 ### Languages & Tools
 * HTML5
@@ -16,9 +16,9 @@ Clone version of BOC web page was  created  to practise my HTML5 CSS3 skills. Th
 * [Click here](https://visalsrimanga.github.io/BOC-Web-Clone/) to see the demo website.
 
 ### version
-1.0.0
+v1.0.0
 
-### Licence
+### License
 Copyright &copy; 2022 Visal Srimanga. All Right Reserved.<br>
 This project is licensed under the [MIT License](LICENSE.txt)
 
